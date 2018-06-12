@@ -84,6 +84,7 @@ nav {
         text-decoration: none;
         list-style-type: none;
         
+        
 	} //end li
     ul li:last-child {
         border-right: none;
@@ -95,14 +96,17 @@ nav {
 		padding: .5rem .3rem;
 		color: $primaryColor;
 		text-decoration: none;
+        white-space: nowrap;
         
 	} //end anchors
 	ul li.active a {
 		background-color: darken($secondaryColor, 10%);
+        
 	} //end active
 	ul li a:hover {
 		color: $secondaryColor;
 		background-color: $primaryColor;
+        
 	} //end hover
 } //end nav
 
