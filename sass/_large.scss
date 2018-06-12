@@ -1,0 +1,37 @@
+/*------------NAV-------------*/
+
+nav {
+	ul {
+		display: flex;
+        display: -ms-flexbox;
+	}
+	background-color: $secondaryColor;
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	ul li {
+		flex-basis: 25;
+        -ms-flex: 25%;
+		border-right: 1px solid rgba(0, 0, 0, .3);
+        text-decoration: none;
+        list-style-type: none;
+        
+	} //end li
+    
+	ul li a {
+		
+		padding: .5rem 1rem;
+		
+	} //end anchors
+}
+/*-----------MAIN------------*/
+
+main {
+	div.container1 div {
+        -ms-flex: 29.333%;
+        flex-basis: 33.333%;
+    }
+     div.container2 figure {
+        -ms-flex: 21%;
+        flex-basis: 25%;
+    }
+
+} //end main
