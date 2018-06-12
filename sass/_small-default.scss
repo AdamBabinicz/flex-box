@@ -1,22 +1,28 @@
 /*------------HEADER---------------*/
 
 header {
+
 	background-color: $primaryColor;
 	color: $secondaryColor;
 	padding: 1rem $gutter;
+	figure.logo {
+		float: left;
+	}
 	h1 {
 		font-size: 2rem;
 		font-weight: $normalWeight;
+		font-family: 'Lato', sans-serif;
 	}
 	h2 {
 		font-size: 1.12rem;
 		font-weight: $normalWeight;
+		font-family: 'Lato', sans-serif;
+
 	} //end h2 rules
-    
 	/*--------HEADER SOCIAL ICONS-----------*/
 	ul {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: wrap;
 
 	}
@@ -31,12 +37,12 @@ header {
 		height: 3rem;
 		width: 3.2rem;
 		transition: all .5s ease;
-        
+
 	}
 	ul.social li a:hover {
 		background-image: url(../images/media-.png);
 		transition: background-image .5s ease;
-        transform: scale(1.05);
+		transform: scale(1.05);
 	}
 	ul.social .vimeo a {
 		background-position: -102px -46px;
@@ -66,30 +72,32 @@ header {
 
 
 } //end header
-
 /*------------------ NAV ----------------*/
 
 nav {
-    @include gradient($secondaryColor, darken($secondaryColor, 20%));
+	@include gradient($secondaryColor, darken($secondaryColor, 20%));
 	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	position: fixed;
+	width: 100%;
+	font-family: 'Lato', sans-serif;
 	ul {
 		display: flex;
-        display: -ms-flexbox;
-       
+		display: -ms-flexbox;
+
 	}
-	
+
 	ul li {
 		flex-basis: 25%;
-        -ms-flex: 25%;
+		-ms-flex: 25%;
 		border-right: 1px solid rgba(0, 0, 0, .3);
-        text-decoration: none;
-        list-style-type: none;
-        
-        
+		text-decoration: none;
+		list-style-type: none;
+		justify-content: center;
+
 	} //end li
-    ul li:last-child {
-        border-right: none;
-    }
+	ul li:last-child {
+		border-right: none;
+	}
 	ul li a {
 		display: block;
 		text-align: center;
@@ -97,25 +105,24 @@ nav {
 		padding: .5rem .3rem;
 		color: $primaryColor;
 		text-decoration: none;
-        white-space: nowrap;
-        transition: background .5s ease;
+		white-space: nowrap;
+		transition: background .5s ease;
 	} //end anchors
 	ul li.active a {
 		background-color: darken($secondaryColor, 10%);
-        
+
 	} //end active
 	ul li a:hover {
 		color: $secondaryColor;
 		background-color: $primaryColor;
-        transition: background .5s ease;
-        
+		transition: background .5s ease;
+
 	} //end hover
 } //end nav
-
 /*-------------MAIN--------------*/
 
 main {
-    display: block;
+	display: block;
 	max-width: 60rem;
 	margin: auto;
 	h1 {
@@ -128,64 +135,63 @@ main {
 		margin: .75rem 0 .5rem 0;
 		color: lighten($primaryColor, 10%);
 	} //end h2
-    div.container1 {
-        display: -ms-flex;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    div.container2 {
-        display: -ms-flex;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    div.container2 figure {
-        -ms-flex: 46%;
-        flex-basis: 50%;
-        padding: 1rem $gutter;
-        transition: transform .3s ease-in-out;
-    }
-    div.container2 figure img {
-        width: 100%;
-    }
-    div.container2 figure:hover {
-        transform: scale(1.05);
-    }
-    div.container1 div {
-        -ms-flexbasis: 100%;
-        flex-basis: 100%;
-        padding: 1rem $gutter;
-        align-items: stretch;
-        background-color: #eee;
-        border: solid 1px #bbb;
-    }
+	div.container1 {
+		display: -ms-flex;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	div.container2 {
+		display: -ms-flex;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	div.container2 figure {
+		-ms-flex: 46%;
+		flex-basis: 50%;
+		padding: 1rem $gutter;
+		transition: transform .3s ease-in-out;
+	}
+	div.container2 figure img {
+		width: 100%;
+	}
+	div.container2 figure:hover {
+		transform: scale(1.05);
+	}
+	div.container1 div {
+		-ms-flexbasis: 100%;
+		flex-basis: 100%;
+		padding: 1rem $gutter;
+		align-items: stretch;
+		background-color: #eee;
+		border: solid 1px #bbb;
+	}
 
 } //end main
 /*---------------FOOTER-------------*/
 
 footer {
 	width: 100%;
-    background-color: $primaryColor;
-	
-    p{
-        text-align: center;
-        color: $secondaryColor;
-        padding: .75rem 0;
-        font-size: .9rem;
-    }//end p
-    
-    p a {
-        color: $secondaryColor;
-    }
-}//end footer
+	background-color: $primaryColor;
 
+	p {
+		text-align: center;
+		color: $secondaryColor;
+		padding: .75rem 0;
+		font-size: .9rem;
+	} //end p
+	p a {
+		color: $secondaryColor;
+	}
+} //end footer
 /*---------Clearfix: Force an Element not to collapse----------*/
+
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
