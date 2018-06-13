@@ -1,23 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+p {
+    line-height: 1.7rem;
+}
 /*------------HEADER---------------*/
 
 header {
-
-	background-color: $primaryColor;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: $primaryColor;
 	color: $secondaryColor;
 	padding: 1rem $gutter;
 	figure.logo {
 		float: left;
+        
 	}
 	h1 {
 		font-size: 2rem;
 		font-weight: $normalWeight;
 		font-family: 'Lato', sans-serif;
+        
 	}
 	h2 {
 		font-size: 1.12rem;
 		font-weight: $normalWeight;
 		font-family: 'Lato', sans-serif;
-
+        
 	} //end h2 rules
 	/*--------HEADER SOCIAL ICONS-----------*/
 	ul {
@@ -80,6 +91,7 @@ nav {
 	position: fixed;
 	width: 100%;
 	font-family: 'Lato', sans-serif;
+    z-index: 999;
 	ul {
 		display: flex;
 		display: -ms-flexbox;
@@ -124,16 +136,21 @@ nav {
 main {
 	display: block;
 	max-width: 60rem;
-	margin: auto;
+	margin: 0 auto;
+    margin-top: 8.7rem;
+    padding-top: 2rem;
+    
 	h1 {
 		font-size: 2rem;
-		margin: 1.5rem 0 .5rem 0;
+		margin: 1rem ;
 		color: $primaryColor;
+        
 	} //end h1
 	h2 {
 		font-size: 1.5rem;
 		margin: .75rem 0 .5rem 0;
 		color: lighten($primaryColor, 10%);
+        text-align: center;
 	} //end h2
 	div.container1 {
 		display: -ms-flex;
@@ -141,6 +158,22 @@ main {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+    div.container1 figure {
+        -ms-flex: 46%;
+		flex-basis: 50%;
+		padding: 1rem $gutter;
+		transition: transform .3s ease-in-out;
+    }
+    div.container1 figure:hover {
+		transform: scale(1.05);
+	}
+    div.container1 figure img {
+        width: 100%;
+    }
+    .dol {
+        margin: 0 auto;
+        width: 100%;
+    }
 	div.container2 {
 		display: -ms-flex;
 		display: flex;
