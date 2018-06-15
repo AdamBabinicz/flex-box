@@ -220,8 +220,19 @@ main {
 	max-width: 100%;
     margin: 0 auto;    
     }
+    
+    #informacje, #zdjecie, #miniaturki {
+        background-color: red;
+        display: flex;
+        justify-content: space-around;
+        
+    } 
+    #zdjecie img {
+        width: 100%;
+    }
 
 } //end main
+
 /*---------------FOOTER-------------*/
 
 footer {
