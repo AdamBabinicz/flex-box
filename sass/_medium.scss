@@ -1,3 +1,7 @@
+
+/*------------NAV-------------*/
+
+
 /*----------HEADER SOCIAL ICONS------------*/
 
 header {
@@ -6,15 +10,18 @@ header {
 		justify-content: flex-end;
 		flex-wrap: wrap;
 	}
-
+    ul.social li {
+		
+        padding-right: 1.5rem;
+	}
 	ul.social li a {
 		font-size: 2.5rem;
-	}
+	}//end ul.social li a
 
 } //end header
 /*----------NAV------------*/
 
-nav {}
+nav {}//end NAV
 
 /*------------MAIN----------*/
 
@@ -23,9 +30,6 @@ main {
 		-ms-flex: 46%;
 		flex-basis: 50%;
 	}
-	div.container2 figure {
-		-ms-flex: 29.333%;
-		flex-basis: 33.333%;
-	}
+	
 
 } //end end

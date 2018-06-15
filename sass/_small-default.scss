@@ -1,6 +1,9 @@
 body {
 	font-family: 'Arial', sans-serif;
 	background-color: $backgroundColor;
+	figcaption {
+		text-align: center;
+	}
 }
 
 p {
@@ -17,12 +20,14 @@ header {
 	z-index: 1000;
 	background-color: $primaryColor;
 	color: $secondaryColor;
-	padding: 1rem $gutter;
+	height: 8em;
 
 	figure.logo {
 		float: left;
-
+		margin-top: .35rem;
+		margin-right: 1.1rem;
 	}
+
 	h1 {
 		font-size: 2rem;
 		font-weight: $normalWeight;
@@ -38,14 +43,11 @@ header {
 	/*--------HEADER SOCIAL ICONS-----------*/
 	ul {
 		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-wrap: nowrap;
 
 	}
-	ul.social li {
-		list-style-type: none;
 
-	}
 	ul.social li a {
 		display: block;
 		margin: 0 auto;
@@ -53,15 +55,15 @@ header {
 		height: 3rem;
 		width: 3.2rem;
 		transition: all .5s ease;
-
+		margin-bottom: .4rem;
 	}
 	ul.social li a:hover {
 		background-image: url(../images/media-.png);
 		transition: background-image .5s ease;
 		transform: scale(1.05);
 	}
-	ul.social .vimeo a {
-		background-position: -102px -46px;
+	ul.social .in a {
+		background-position: -8px -90px;
 	}
 	ul.social .google a {
 		background-position: -53px .3px;
@@ -72,8 +74,8 @@ header {
 	ul.social .youtube a {
 		background-position: -105px .3px;
 	}
-	ul.social .vimeo a:hover {
-		background-position: -102px -46px;
+	ul.social .in a:hover {
+		background-position: -8px -90px;
 	}
 	ul.social .google a:hover {
 		background-position: -53px .3px;
@@ -97,6 +99,7 @@ nav {
 	width: 100%;
 	font-family: 'Lato', sans-serif;
 	z-index: 999;
+
 	ul {
 		display: flex;
 		display: -ms-flexbox;
@@ -107,8 +110,6 @@ nav {
 		flex-basis: 25%;
 		-ms-flex: 25%;
 		border-right: 1px solid rgba(0, 0, 0, .3);
-		text-decoration: none;
-		list-style-type: none;
 		justify-content: center;
 
 	} //end li
@@ -121,7 +122,6 @@ nav {
 		font-weight: $boldWeight;
 		padding: .5rem .3rem;
 		color: $primaryColor;
-		text-decoration: none;
 		white-space: nowrap;
 		transition: background .5s ease;
 	} //end anchors
@@ -147,7 +147,8 @@ main {
 
 	h1 {
 		font-size: 2rem;
-		margin: 1rem;
+		margin-left: 1rem;
+		margin-bottom: 1rem;
 		color: $primaryColor;
 
 	} //end h1
@@ -178,10 +179,11 @@ main {
 		width: 100%;
 	}
 	.dol {
-
-		margin: 3rem auto;
-
-
+		margin: 2rem auto;
+		max-width: 95%;
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
 	}
 
 	div.container1 div {
@@ -191,6 +193,17 @@ main {
 		align-items: stretch;
 		background-color: $mainColor;
 
+	}
+	code {
+
+		background-color: rgba(248, 248, 248, 0.35);
+		border-color: #dfdfdf;
+		border-style: solid;
+		border-width: 1px;
+		color: #333333;
+		font-family: Consolas, "Liberation Mono", Courier, monospace;
+		font-weight: normal;
+		padding: 0.125rem 0.3125rem 0.0625rem;
 	}
 
 } //end main
@@ -206,7 +219,4 @@ footer {
 		padding: .75rem 0;
 		font-size: .9rem;
 	} //end p
-	p a {
-		color: $secondaryColor;
-	}
 } //end footer
