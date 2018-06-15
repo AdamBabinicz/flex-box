@@ -1,14 +1,19 @@
+html {}
+
 body {
+	position: relative;
+
 	font-family: 'Arial', sans-serif;
 	background-color: $backgroundColor;
+	overflow-x: hidden;
 	figcaption {
 		text-align: center;
+		margin-top: .3rem;
 	}
-}
-
-p {
-	line-height: 1.7rem;
-
+	p {
+		line-height: 1.7rem;
+		margin: 0 .7rem;
+	}
 }
 
 /*------------HEADER---------------*/
@@ -205,18 +210,54 @@ main {
 		font-weight: normal;
 		padding: 0.125rem 0.3125rem 0.0625rem;
 	}
+	/*-------------- SLICK SLIDER -------------*/
+	div.myslider div {
+		width: 100%;
+
+	}
+
+	div.myslider div img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.cyt {
+		background-color: red;
+		display: flex;
+		justify-content: flex-end;
+
+	}
+
+	#informacje {
+		align-self: stretch;
+		flex-grow: 3;
+	}
+	#miniaturki {
+		align-self: center;
+		background-color: green;
+		cursor: pointer;
+		flex-wrap: wrap;
+	}
+	#zdjecie img {
+		width: 100%;
+		flex-grow: 3;
+		height: 100%;
+	}
 
 } //end main
 /*---------------FOOTER-------------*/
 
 footer {
+
 	width: 100%;
 	background-color: $primaryColor;
+	height: 3.2rem;
+	line-height: 3.2rem;
 
 	p {
 		text-align: center;
 		color: $secondaryColor;
 		padding: .75rem 0;
 		font-size: .9rem;
+
 	} //end p
 } //end footer

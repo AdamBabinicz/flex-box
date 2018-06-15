@@ -1,18 +1,27 @@
-* {
+*,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none; }
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: rgba(149, 145, 145, 0.33); }
-  body figcaption {
-    text-align: center; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
 
-p {
-  line-height: 1.7rem; }
+body {
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(149, 145, 145, 0.33);
+  overflow-x: hidden; }
+  body figcaption {
+    text-align: center;
+    margin-top: .3rem; }
+  body p {
+    line-height: 1.7rem;
+    margin: 0 .7rem; }
 
 /*------------HEADER---------------*/
 header {
@@ -117,7 +126,8 @@ main {
   max-width: 60rem;
   margin: 0 auto;
   margin-top: 8.7rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  /*-------------- SLICK SLIDER -------------*/ }
   main h1 {
     font-size: 2rem;
     margin-left: 1rem;
@@ -163,11 +173,34 @@ main {
     font-family: Consolas, "Liberation Mono", Courier, monospace;
     font-weight: normal;
     padding: 0.125rem 0.3125rem 0.0625rem; }
+  main div.myslider div {
+    width: 100%; }
+  main div.myslider div img {
+    max-width: 100%;
+    margin: 0 auto; }
+  main .cyt {
+    background-color: red;
+    display: flex;
+    justify-content: flex-end; }
+  main #informacje {
+    align-self: stretch;
+    flex-grow: 3; }
+  main #miniaturki {
+    align-self: center;
+    background-color: green;
+    cursor: pointer;
+    flex-wrap: wrap; }
+  main #zdjecie img {
+    width: 100%;
+    flex-grow: 3;
+    height: 100%; }
 
 /*---------------FOOTER-------------*/
 footer {
   width: 100%;
-  background-color: #3c5781; }
+  background-color: #3c5781;
+  height: 3.2rem;
+  line-height: 3.2rem; }
   footer p {
     text-align: center;
     color: #90ba56;
