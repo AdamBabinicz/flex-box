@@ -10,6 +10,7 @@ body {
 	line-height: 1.7rem;
     margin: 0 .7rem;
     }
+    overflow-y: scroll;
 }
 
 
@@ -147,7 +148,7 @@ main {
 	margin: 0 auto;
 	margin-top: 8.7rem;
 	padding-top: 2rem;
-
+    
 	h1 {
 		font-size: 2rem;
 		margin-left: 1rem;
@@ -208,14 +209,26 @@ main {
     font-weight: normal;
     padding: 0.125rem 0.3125rem 0.0625rem;
 }
+    /*-------------- SLICK SLIDER -------------*/
+
+    div.myslider div {
+	width: 100%;
+    
+    }
+
+    div.myslider div img {
+	max-width: 100%;
+    margin: 0 auto;    
+    }
 
 } //end main
 /*---------------FOOTER-------------*/
 
 footer {
+    
 	width: 100%;
 	background-color: $primaryColor;
-
+    
 	p {
 		text-align: center;
 		color: $secondaryColor;
