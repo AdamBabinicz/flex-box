@@ -139,22 +139,23 @@ nav {
 		transition: background .5s ease;
 
 	} //end hover
-    
-    li > ul {
-  display: none;
-   position:relative;
-    
-}
+	li > ul {
+		display: none;
+		position: relative;
 
-    li:hover > ul {
-  display:flex;
-   position: absolute;
-      
-     
-    
-}
-  
-        
+	}
+
+	li:hover > ul {
+		display: block;
+		position: absolute;
+		width: 25%;
+		background-color: $secondaryColor;
+		text-align: center;
+		transition: background .5s ease;
+
+	}
+
+
 } //end nav
 /*-------------MAIN--------------*/
 
@@ -174,16 +175,21 @@ main {
 	} //end h1
 	h2 {
 		font-size: 1.5rem;
-		margin: .75rem 0 .5rem 0;
+		margin: .75rem 0 .5rem 1rem;
 		color: $primaryColor;
-		text-align: center;
+
 	} //end h2
 	div.container1 {
 		display: -ms-flex;
 		display: flex;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-
+		h2 {
+			font-size: 1.5rem;
+			margin: .75rem 0 .5rem 0;
+			color: $primaryColor;
+			text-align: center;
+		}
 	}
 	div.container1 figure {
 		-ms-flex: 46%;
@@ -239,7 +245,7 @@ main {
 		background-color: ed;
 		display: flex;
 		justify-content: flex-end;
-        
+
 	}
 
 	#informacje {
@@ -247,19 +253,19 @@ main {
 		flex-grow: 3;
 	}
 	#miniaturki {
-        display: flex;
-        justify-content: space-around;
+		display: flex;
+		justify-content: space-around;
 		background-color: reen;
 		cursor: pointer;
-        padding: 1rem;
-		
+		padding: 1rem;
+
 	}
 	#zdjecie img {
 		width: 100%;
 		flex-grow: 3;
 		height: 100%;
 	}
-    
+
 
 } //end main
 /*---------------FOOTER-------------*/

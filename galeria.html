@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="DESCRIPTION" content="Zapraszam na swoją stronę wszystkich, którzy poznali mnie jako parodystę ulicznego Michała, zwanego 'Makłowiczem z Radomia'." />
+	<meta name="DESCRIPTION" content="Zapraszam na swoją stronę wszystkich, którzy poznali mnie jako parodystę ulicznego Michała, zwanego 'Makłowiczem z Radomia'." />
 	<title>Michał - parodysta z Radomia - galeria</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="slick/slick.css">
@@ -15,7 +15,6 @@
 
 <body>
 	<header>
-
 		<figure class="logo">
 			<img src="images/bird.png" srcset="images/bird1x.png 1x, images/bird2x.png 2x, images/bird3x.png 3x" alt="">
 		</figure>
@@ -27,59 +26,65 @@
 			<li class="twitter"><a href="https://twitter.com" target="_blank"></a></li>
 			<li class="youtube"><a href="https://www.youtube.com" target="_blank"></a></li>
 		</ul>
-	
-	<!--NAV STARTS HERE-->
-
-	<nav>
-		<ul>
-			<li><a href="index.html">O mnie</a></li>
-			<li><a href="filmy-seriale.html">Filmy i seriale</a></li>
-			<li class="active"><a href="#">Zdjęcia</a></li>
-			<li><a href="#">Wywiad</a></li>
-		</ul>
-	</nav>
-</header>
+		<!--NAV STARTS HERE-->
+		<nav>
+			<ul>
+				<li><a href="index.html">O mnie</a>
+					<ul>
+						<li><a href="szkice.html">Szkice</a></li>
+					</ul>
+				</li>
+				<li><a href="filmy-seriale.html">Filmy i seriale</a></li>
+				<li class="active"><a href="galeria.html">Zdjęcia</a></li>
+				<li><a href="#">Wywiad</a></li>
+			</ul>
+		</nav>
+	</header>
 	<!--MAIN STARTS HERE-->
-	<main>
-		<h1>Galeria</h1>
-		
-        <!-- start slider -->
-         
-            <div class="myslider">
-             <figure>  
-			<picture>
-				<source srcset="images/3.jpg" media="(min-width: 29.25rem)">
-				<img src="images/1.jpg" alt="Michał">
-			</picture><figcaption>podpis</figcaption>
-             </figure>
-            <figure>   
-			<picture>
-				<source srcset="images/3-3.jpg" media="(min-width: 29.25rem)">
-				<img src="images/1-1.jpg" alt="Michał">
-			</picture><figcaption>podpis</figcaption>
-             </figure>
-            <figure>    
-			<picture>
-				<source srcset="images/2-2.jpg" media="(min-width: 29.25rem)">
-				<img src="images/1-4.jpg" alt="Michał">
-			</picture><figcaption>podpis</figcaption>
-             </figure>
-                <figure>
-			<picture>
-				<source srcset="images/2-3.jpg" media="(min-width: 29.25rem)">
-				<img src="images/16-2.jpg" alt="Michał">
-			</picture><figcaption>podpis</figcaption>
-             </figure>  
+	<main><br>
+		<h2>Galeria</h2>
+
+		<!-- start slider -->
+
+		<div class="myslider">
+			<figure>
+				<picture>
+					<source srcset="images/3.jpg" media="(min-width: 29.25rem)">
+					<img src="images/1.jpg" alt="Michał">
+				</picture>
+				<figcaption>podpis</figcaption>
+			</figure>
+			<figure>
+				<picture>
+					<source srcset="images/3-3.jpg" media="(min-width: 29.25rem)">
+					<img src="images/1-1.jpg" alt="Michał">
+				</picture>
+				<figcaption>podpis</figcaption>
+			</figure>
+			<figure>
+				<picture>
+					<source srcset="images/2-2.jpg" media="(min-width: 29.25rem)">
+					<img src="images/1-4.jpg" alt="Michał">
+				</picture>
+				<figcaption>podpis</figcaption>
+			</figure>
+			<figure>
+				<picture>
+					<source srcset="images/2-3.jpg" media="(min-width: 29.25rem)">
+					<img src="images/16-2.jpg" alt="Michał">
+				</picture>
+				<figcaption>podpis</figcaption>
+			</figure>
 		</div>
-          
+
 		<!-- end slider	-->
-        
+
 	</main>
 	<!--FOOTER STARTS HERE-->
 	<footer>
 		<p>Michał &copy; 2018</p>
 	</footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script>
 		$(document).ready(function() {

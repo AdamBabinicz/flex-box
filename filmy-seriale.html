@@ -15,7 +15,6 @@
 
 <body>
 	<header>
-
 		<figure class="logo">
 			<img src="images/bird.png" srcset="images/bird1x.png 1x, images/bird2x.png 2x, images/bird3x.png 3x" alt="">
 		</figure>
@@ -27,38 +26,38 @@
 			<li class="twitter"><a href="https://twitter.com" target="_blank"></a></li>
 			<li class="youtube"><a href="https://www.youtube.com" target="_blank"></a></li>
 		</ul>
-
-		<!--NAV STARTS HERE-->
-
 		<nav>
 			<ul>
-				<li><a href="index.html">O mnie</a></li>
-				<li class="active"><a href="">Filmy i seriale</a></li>
+				<li><a href="index.html">O mnie</a>
+					<ul>
+						<li><a href="szkice.html">Szkice</a></li>
+					</ul>
+				</li>
+				<li class="active"><a href="#">Filmy i seriale</a></li>
 				<li><a href="galeria.html">Zdjęcia</a></li>
 				<li><a href="#">Wywiad</a></li>
-                
 			</ul>
 		</nav>
 	</header>
 	<!--MAIN STARTS HERE-->
-	<main>
-		<h1>Cytaty</h1>
+	<main><br>
+		<h2>Cytaty</h2>
 
 		<!--START NAV FILMS-->
 		<div class="cyt">
 			<div id="informacje"></div>
 			<div id="zdjecie"></div>
-         </div>   
-			<div id="miniaturki"></div>
+		</div>
+		<div id="miniaturki"></div>
 
-		
+
 
 	</main>
 	<!--FOOTER STARTS HERE-->
 	<footer>
 		<p>Michał &copy; 2018</p>
 	</footer>
-	<script type="text/javascript">
+	<script>
 		var zdjecia = Array(
 			Array('images/1.jpg', 'images/f.png', 'Tapeta na pulpit', '...Heniu, odkręcaj'),
 			Array('images/1-1.jpg', 'images/f.png', 'Zubr', ''),

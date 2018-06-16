@@ -1,8 +1,9 @@
 /*------HEADER SOCIAL ICONS----*/
+
 ul.social li {
-		
-        padding-right: 2rem;
-	}//end ul.social li
+
+	padding-right: 2rem;
+} //end ul.social li
 /*------------NAV-------------*/
 
 nav {
@@ -26,6 +27,10 @@ nav {
 		padding: .5rem 1rem;
 
 	} //end anchors
+	li:hover > ul {
+		width: 15%;
+	}
+
 }
 
 /*-----------MAIN------------*/
@@ -35,6 +40,6 @@ main {
 		-ms-flex: 29.333%;
 		flex-basis: 33.333%;
 	}
-	
+
 
 } //end main
