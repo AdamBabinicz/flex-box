@@ -2,7 +2,6 @@ html {}
 
 body {
 	position: relative;
-
 	font-family: 'Arial', sans-serif;
 	background-color: $backgroundColor;
 	overflow-x: hidden;
@@ -140,6 +139,22 @@ nav {
 		transition: background .5s ease;
 
 	} //end hover
+    
+    li > ul {
+  display: none;
+   position:relative;
+    
+}
+
+    li:hover > ul {
+  display:flex;
+   position: absolute;
+      
+     
+    
+}
+  
+        
 } //end nav
 /*-------------MAIN--------------*/
 
@@ -221,10 +236,10 @@ main {
 		margin: 0 auto;
 	}
 	.cyt {
-		background-color: red;
+		background-color: ed;
 		display: flex;
 		justify-content: flex-end;
-
+        
 	}
 
 	#informacje {
@@ -232,16 +247,19 @@ main {
 		flex-grow: 3;
 	}
 	#miniaturki {
-		align-self: center;
-		background-color: green;
+        display: flex;
+        justify-content: space-around;
+		background-color: reen;
 		cursor: pointer;
-		flex-wrap: wrap;
+        padding: 1rem;
+		
 	}
 	#zdjecie img {
 		width: 100%;
 		flex-grow: 3;
 		height: 100%;
 	}
+    
 
 } //end main
 /*---------------FOOTER-------------*/
