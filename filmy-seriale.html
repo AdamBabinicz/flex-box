@@ -40,7 +40,7 @@
 		</nav>
 	</header>
 	<!--MAIN STARTS HERE-->
-	<main><br>
+	<main>
 		<h2>Cytaty</h2>
 
 		<!--START NAV FILMS-->
@@ -50,8 +50,6 @@
 		</div>
 		<div id="miniaturki"></div>
 
-
-
 	</main>
 	<!--FOOTER STARTS HERE-->
 	<footer>
@@ -59,17 +57,18 @@
 	</footer>
 	<script>
 		var zdjecia = Array(
-			Array('images/1.jpg', 'images/f.png', 'Tapeta na pulpit', '...Heniu, odkręcaj'),
-			Array('images/1-1.jpg', 'images/f.png', 'Zubr', ''),
-			Array('images/1-3.jpg', 'images/f.png', 'Cheshire Kitten', ''),
-			Array('images/1-4.jpg', 'images/f.png', 'Family of Colors', ''),
-			Array('images/2.jpg', 'images/f.png', 'C.K. Dezerterzy', 'To jest kura, panie generale. A może to jest osioł?'),
-			Array('images/2-2.jpg', 'images/f.png', 'Sound Wave', ''),
-			Array('images/2-3.jpg', 'images/f.png', 'Sun Eclipse', ''),
-			Array('images/3.jpg', 'images/f.png', 'Tree and Moon', '')
+			Array('filmy/vabank.jpg', 'filmy/icon.png', 'Vabank', '"Przepraszam, zastałem pana Murzyna?<br>Kogo?<br> No Murzyna, przecież wczoraj widziałem, jak wychodził z tego mieszkania z psem.<br>Co? Z antychrystem pod jednym dachem, broń Boże... i tu nie ma żadnego psa!"'),
+			Array('filmy/ck.jpg', 'filmy/icon.png', 'C.K. Dezerterzy', '"Niedługo stwierdzą niezbicie, że napadu na tego pijanego oficera dokonała załoga łodzi podwodnej z atlantyckiej eskadry angielskiej, wykreślą trasę tej łodzi na mapie i udowodnią, że łódź ominęła linie blokady, wpłynęła do Dunaju i jakimś dopływem dostała się do nas, potem rurami kanalizacyjnymi podjechała do sracza i zakotwiczyła w oczekiwaniu na pana oberlejtnanta!"'),
+			Array('filmy/agata.jpg', 'filmy/icon.png', 'Uprowadzenie Agaty', '"Chodzi o to, że ja do służby zgłosiłem się dobrowolnie, i ciągle muszę wysługiwać się takim fagasom, jak wy. Ja od tego wszystkiego zwariowałem. Heniu odkręcaj."<br>"To jest zamach stanu! To jest zamach stanu!"'),
+			Array('filmy/king.jpg', 'filmy/icon.png', 'Kingsajz', '"Hejkum kejkum, Olo, ratuj! Hejkum kejkum, Olo, ratuj!"<br>"Daj mi agrafkę… żywcem mnie nie wezmą!"<br>"Mydłem. Dobijemy go mydłem."'),
+			Array('filmy/nikodem.jpg', 'filmy/icon.png', 'Kariera Nikodema Dyzmy', '"Milczeć! Sapristi! Z was się śmieję! Z was! Elita! Cha, cha, cha... Otóż oświadczam wam, że wasz mąż stanu, wasz Cincinnatus, wasz wielki człowiek, wasz Nikodem Dyzma to zwykły oszust, co was za nos wodzi, to sprytny łajdak, fałszerz i jednocześnie kompletny kretyn! Idiota, nie mający zielonego pojęcia nie tylko o ekonomii, lecz o ortografii. To cham, bez cienia kindersztuby, bez najmniejszego okrzesania!".'),
+			Array('filmy/rejs.jpg', 'filmy/icon.png', 'Rejs', '"I kto za to płaci? Pani płaci, Pan płaci.. Społeczeństwo."<br>"Przejdźmy od słów do czynów. Chciałem powiedzieć kilka słów."<br>"Nam chodzi o odgłos wydany paszczą.<br>Patataj... Patataj... Patataj..."'),
+			Array('filmy/mis.jpg', 'filmy/icon.png', 'Miś', '"Dzień dobry, cześć i czołem! Pytacie, skąd się wziąłem?! Jestem wesoły Romek! Mam na przedmieściu domek, a w domku wodę, światło, gaz! Powtarzam zatem jeszcze raz: jestem wesoły Romek! Mam…"<br>"Łubu dubu, łubu dubu, niech żyje nam prezes naszego klubu. Niech żyje nam! To śpiewałem ja – Jarząbek."'),
+			Array('filmy/kiep.jpg', 'filmy/icon.png', 'Świat według Kiepskich', '"Ja se idę do siebie i se usmażę kiszeczki na tłuszczyku, tłuściutko tak jak lubię."<br>"Śpię se spokojnie, a tu nagle sru! Panie lecę do kuchni, a tam mi się lodówa rozdupcyła!"<br>"Pieniądz nie gra roli, kiedy pęcherz boli!"<br>"To panu zawsze się chce, kiedy mnie się chce!"<br>"Babka ty siedź cicho bo cię zamkniem do szafy!"<br>"O, w mordę jeża!"<br>"Moje ulubiene."')
 		);
 
-		var max_width = 520;
+		var max_width = 600;
+
 
 		function laduj() {
 			for (var i = 0; i < zdjecia.length; i++)
@@ -85,7 +84,7 @@
 				if (preload.width > max_width)
 					custom = ' style="height: ' + (Math.floor(max_width / (preload.width / preload.height))) + 'px;width:' + max_width + 'px;"';
 
-				document.getElementById('informacje').innerHTML = '<b>' + zdjecia[id][2] + '</b><br /><i>' + zdjecia[id][3] + '</i>';
+				document.getElementById('informacje').innerHTML = '<b>' + zdjecia[id][2] + '</b><br /><br /><i>' + zdjecia[id][3] + '</i>';
 				document.getElementById('zdjecie').innerHTML = '<img src="' + zdjecia[id][0] + '"' + custom + ' />';
 			}
 			preload.src = zdjecia[id][0];
