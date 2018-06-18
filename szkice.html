@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="DESCRIPTION" content="Próbka mojego zamiłowania do rysunku ołówkiem znanych postaci ze świata piosenki i filmu." />
-	<title>Michał - parodysta z Radomia - szkice ołówkiem</title>
+	<title>Michał - radomski parodysta - szkice ołówkiem</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="slick/slick.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700|Parisienne">
-	<link rel="icon" type="image/x-icon" href="..images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="https://parodysta.000webhostapp.com/images/favicon.ico" />
 </head>
 
 <body>
@@ -36,7 +36,7 @@
 				</li>
 				<li><a href="filmy-seriale.html">Filmy i seriale</a></li>
 				<li><a href="galeria.html">Zdjęcia</a></li>
-				<li><a href="#">Wywiad</a></li>
+				<li><a href="#">Blog</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -49,31 +49,31 @@
 		<div class="myslider">
 			<figure>
 				<picture>
-					<source srcset="szkice/" media="(min-width: 29.25rem)">
+					<source srcset="szkice/1.png" media="(min-width: 29.25rem)">
 					<img src="szkice/1_.jpg" alt="Michał">
 				</picture>
-				<figcaption>"Piasek"</figcaption>
+				<figcaption>"Wkrótce"</figcaption>
 			</figure>
 			<figure>
 				<picture>
-					<source srcset="szkice/" media="(min-width: 29.25rem)">
+					<source srcset="szkice/1.png" media="(min-width: 29.25rem)">
 					<img src="szkice/2_.jpg" alt="Michał">
 				</picture>
-				<figcaption>"Piasek"</figcaption>
+				<figcaption>"Wkrótce"</figcaption>
 			</figure>
 			<figure>
 				<picture>
-					<source srcset="szkice/" media="(min-width: 29.25rem)">
+					<source srcset="szkice/1.png" media="(min-width: 29.25rem)">
 					<img src="szkice/3_.jpg" alt="Michał">
 				</picture>
-				<figcaption>"Piasek"</figcaption>
+				<figcaption>"Wkrótce"</figcaption>
 			</figure>
 			<figure>
 				<picture>
-					<source srcset="szkice/" media="(min-width: 29.25rem)">
+					<source srcset="szkice/1.png" media="(min-width: 29.25rem)">
 					<img src="szkice/1_.jpg" alt="Michał">
 				</picture>
-				<figcaption>"Piasek"</figcaption>
+				<figcaption>"Wkrótce"</figcaption>
 			</figure>
 		</div>
 
@@ -82,7 +82,7 @@
 	</main>
 	<!--FOOTER STARTS HERE-->
 	<footer>
-		<p>Michał &copy; 2018</p>
+		<p>Michał 2018</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="slick/slick.min.js"></script>
@@ -98,7 +98,13 @@
 			});
 		});
 	</script>
+	<script>
+		document.body.innerHTML += '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
 
+		function close() {
+			document.getElementById("cookiesAlert").style.color = "blue";
+		}
+	</script>
 
 </body>
 

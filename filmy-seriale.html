@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="DESCRIPTION" content="Najśmieszniejsze cytaty z polskich filmów i seriali, wybrane przez Michała zwanego 'Makłowiczem z Radomia'." />
-	<title>Michał - parodysta z Radomia - filmy i seriale</title>
+	<title>Michał - radomski parodysta - filmy i seriale</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700|Parisienne">
-	<link rel="icon" type="image/x-icon" href="..images/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="https://parodysta.000webhostapp.com/images/favicon.ico" />
 
 
 </head>
@@ -35,7 +35,7 @@
 				</li>
 				<li class="active"><a href="#">Filmy i seriale</a></li>
 				<li><a href="galeria.html">Zdjęcia</a></li>
-				<li><a href="#">Wywiad</a></li>
+				<li><a href="#">Blog</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -53,13 +53,13 @@
 	</main>
 	<!--FOOTER STARTS HERE-->
 	<footer>
-		<p>Michał &copy; 2018</p>
+		<p>Michał 2018</p>
 	</footer>
 	<script>
 		var zdjecia = Array(
 			Array('filmy/vabank1.jpg', 'filmy/icon.png', 'Vabank', '"Przepraszam, zastałem pana Murzyna?<br>Kogo?<br> No Murzyna, przecież wczoraj widziałem, jak wychodził z tego mieszkania z psem.<br>Co? Z antychrystem pod jednym dachem, broń Boże... i tu nie ma żadnego psa!"'),
 			Array('filmy/ck1.jpg', 'filmy/icon.png', 'C.K. Dezerterzy', '"Niedługo stwierdzą niezbicie, że napadu na tego pijanego oficera dokonała załoga łodzi podwodnej z atlantyckiej eskadry angielskiej, wykreślą trasę tej łodzi na mapie i udowodnią, że łódź ominęła linie blokady, wpłynęła do Dunaju i jakimś dopływem dostała się do nas, potem rurami kanalizacyjnymi podjechała do sracza i zakotwiczyła w oczekiwaniu na pana oberlejtnanta!"'),
-			Array('filmy/agata1.jpg', 'filmy/icon.png', 'Uprowadzenie Agaty', '"Chodzi o to, że ja do służby zgłosiłem się dobrowolnie, nie po to, żeby wysługiwać się takim fagasom, jak wy - a muszę! Ja od tego wszystkiego zwariowałem. Heniu odkręcaj."<br>"To jest zamach stanu! To jest zamach stanu!"'),
+			Array('filmy/agata1.jpg', 'filmy/icon.png', 'Uprowadzenie Agaty', '"Chodzi o to, że ja do policji zgłosiłem się sam z własnej woli, nie po to, żeby wysługiwać się takim fagasom, jak wy - a muszę! Ja od tego wszystkiego zwariowałem. Heniu odkręcaj."<br>"To jest zamach stanu! To jest zamach stanu!"'),
 			Array('filmy/king1.jpg', 'filmy/icon.png', 'Kingsajz', '"Hejkum kejkum, Olo, ratuj! Hejkum kejkum, Olo, ratuj!"<br>"Daj mi agrafkę… żywcem mnie nie wezmą!"<br>"Mydłem. Dobijemy go mydłem."'),
 			Array('filmy/nikodem1.jpg', 'filmy/icon.png', 'Kariera Nikodema Dyzmy', '"Milczeć! Sapristi! Z was się śmieję! Z was! Elita! Cha, cha, cha... Otóż oświadczam wam, że wasz mąż stanu, wasz Cincinnatus, wasz wielki człowiek, wasz Nikodem Dyzma to zwykły oszust, co was za nos wodzi, to sprytny łajdak, fałszerz i jednocześnie kompletny kretyn! Idiota, nie mający zielonego pojęcia nie tylko o ekonomii, lecz o ortografii. To cham, bez cienia kindersztuby, bez najmniejszego okrzesania!".'),
 			Array('filmy/rejs1.jpg', 'filmy/icon.png', 'Rejs', '"I kto za to płaci? Pani płaci, Pan płaci.. Społeczeństwo."<br>"Przejdźmy od słów do czynów. Chciałem powiedzieć kilka słów."<br>"Nam chodzi o odgłos wydany paszczą.<br>Patataj... Patataj... Patataj..."'),
@@ -92,7 +92,13 @@
 
 		window.onload = laduj;
 	</script>
+	<script>
+		document.body.innerHTML += '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
 
+		function close() {
+			document.getElementById("cookiesAlert").style.color = "blue";
+		}
+	</script>
 
 </body>
 
