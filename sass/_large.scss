@@ -43,8 +43,8 @@ main {
 	.cyt {
 
 		display: flex;
-		justify-content: flex-end;
-
+		justify-content: center;
+        flex-wrap: nowrap;
 	}
 
 } //end main
