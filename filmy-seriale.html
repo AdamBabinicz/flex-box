@@ -4,10 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="DESCRIPTION" content="Najśmieszniejsze cytaty z polskich filmów i seriali, wybrane przez Michała zwanego 'Makłowiczem z Radomia'." />
+	<meta name="DESCRIPTION" content="Najśmieszniejsze cytaty z polskich filmów komediowych i seriali, wybrane i zapamiętane przez parodystę Michała zwanego 'Makłowiczem z Radomia'." />
 	<title>Michał - radomski parodysta - filmy i seriale</title>
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,700|Parisienne">
 	<link rel="icon" type="image/x-icon" href="https://parodysta.000webhostapp.com/images/favicon.ico" />
 
 
@@ -16,15 +15,15 @@
 <body>
 	<header>
 		<figure class="logo">
-			<img src="images/bird.png" srcset="images/bird1x.png 1x, images/bird2x.png 2x, images/bird3x.png 3x" alt="">
+			<img src="images/bird.png" srcset="images/bird1x.png 1x, images/bird2x.png 2x, images/bird3x.png 3x" alt="logo-papuga">
 		</figure>
 		<h1>tu Michał,</h1>
 		<h2>Wasz radomski parodysta</h2>
 		<ul class="social">
 			<li class="in"><a href="https://pl.linkedin.com" target="_blank"></a></li>
-			<li class="google"><a href="https://plus.google.com" target="_blank"></a></li>
+			<li class="google"><a href="https://plus.google.com/102605091198902017821" target="_blank"></a></li>
 			<li class="twitter"><a href="https://twitter.com" target="_blank"></a></li>
-			<li class="youtube"><a href="https://www.youtube.com" target="_blank"></a></li>
+			<li class="youtube"><a href="https://www.youtube.com/channel/UCaljb6wRVUbFQiILO4xyjRw" target="_blank"></a></li>
 		</ul>
 		<nav>
 			<ul>
@@ -41,7 +40,7 @@
 	</header>
 	<!--MAIN STARTS HERE-->
 	<main>
-		<h2>Cytaty</h2>
+		<h2><b>Cytaty</b></h2>
 
 		<!--START NAV FILMS-->
 		<div class="cyt">
@@ -91,6 +90,7 @@
 		}
 
 		window.onload = laduj;
+
 	</script>
 	<script>
 		document.body.innerHTML += '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
@@ -98,16 +98,21 @@
 		function close() {
 			document.getElementById("cookiesAlert").style.color = "blue";
 		}
-	</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121066419-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-121066419-1');
-</script>
+	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121066419-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-121066419-1');
+
+	</script>
 
 </body>
 

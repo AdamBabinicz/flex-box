@@ -2,9 +2,10 @@ html {}
 
 body {
 	position: relative;
-	font-family: 'Arial', sans-serif;
+	font-family: 'Tahoma', sans-serif;
 	background-color: $backgroundColor;
 	overflow-x: hidden;
+    overflow-y: auto;
 	figcaption {
 		text-align: center;
 		margin-top: .3rem;
@@ -179,6 +180,9 @@ main {
 		color: $primaryColor;
 
 	} //end h2
+	div.zn {
+		text-align: center;
+	}
 	div.container1 {
 		display: -ms-flex;
 		display: flex;
@@ -227,8 +231,9 @@ main {
 		border-style: solid;
 		border-width: 1px;
 		color: #333333;
-		font-family: Consolas, "Liberation Mono", Courier, monospace;
-		font-weight: normal;
+		font-family: 'Roboto Mono', monospace;
+		font-weight: 300;
+		font-size: .9rem;
 		padding: 0.125rem 0.3125rem 0.0625rem;
 	}
 	/*-------------- SLICK SLIDER -------------*/
@@ -246,7 +251,7 @@ main {
 		display: flex;
 		flex-direction: column;
 		line-height: 1.5rem;
-        
+
 	}
 
 	#informacje {
@@ -274,10 +279,10 @@ main {
 		transform: scale(1.1);
 		transition: transform .3s ease-in-out;
 	}
-    #miniaturki a:visited img {
-        ackground-image: url(../filmy/icon1.png);
-        background-color: red;
-    }
+	#miniaturki a:visited img {
+		ackground-image: url(../filmy/icon1.png);
+		background-color: red;
+	}
 	#zdjecie img {
 		width: 100%;
 
@@ -302,3 +307,16 @@ footer {
 
 	} //end p
 } //end footer
+@font-face {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./Roboto_Mono/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: url(./Lato/Lato-Light.ttf);
+}
