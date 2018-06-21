@@ -253,15 +253,21 @@ main {
 		line-height: 1.5rem;
 
 	}
-
+    
 	#informacje {
 		align-self: stretch;
 		flex-grow: 3;
 		padding: .7rem .8rem 1rem;
 		text-align: justify;
-
 	}
-	#miniaturki {
+    #informacje {
+        color: rgba(51, 51, 51, 0.88);
+        b {
+            color: gray;
+        }
+    }
+    
+   	#miniaturki {
 		display: flex;
 		justify-content: space-around;
 		cursor: pointer;
@@ -279,9 +285,8 @@ main {
 		transform: scale(1.1);
 		transition: transform .3s ease-in-out;
 	}
-	#miniaturki a:visited img {
-		ackground-image: url(../filmy/icon1.png);
-		background-color: red;
+	#miniaturki a img:visited {
+		border: 1px solid red;
 	}
 	#zdjecie img {
 		width: 100%;
@@ -311,12 +316,12 @@ footer {
 	font-family: 'Roboto Mono';
 	font-style: normal;
 	font-weight: 400;
-	src: url(./Roboto_Mono/RobotoMono-Regular.ttf);
+	src: url(https://parodysta.000webhostapp.com/Roboto_Mono/RobotoMono-Regular.ttf);
 }
 
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	src: url(./Lato/Lato-Light.ttf);
+	src: url(https://parodysta.000webhostapp.com/Lato/Lato-Light.ttf);
 }

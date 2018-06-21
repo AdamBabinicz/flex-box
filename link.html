@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+
+<style type="text/css">
+.red {background:red;}
+#przyklad {
+    font-size: 20px;
+    }
+</style>
+ <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>   
+<script type="text/javascript" >
+$(document).ready(function() {
+$('#link').click(function() {
+$('#przyklad').toggleClass('red');
+});
+});
+</script>
+</head>
+<body>
+<div id="przyklad">
+<a href="javascript:void(0);" id="link">kliknij mnie aby zmienić tło</a>
+</div>
+    <a href="adres"><img src="obrazek_podstawowy.gif" alt="Tekst alternatywny" border="0" onmousedown="this.src = 'obrazek_klikniety.gif'" onmouseup="this.src = 'obrazek_podstawowy.gif'" /></a>
+</body>
+</html>
