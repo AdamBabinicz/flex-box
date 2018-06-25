@@ -55,6 +55,7 @@
 		<p>Michał 2018</p>
 	</footer>
 	<script>
+        
 		var zdjecia = Array(
 			Array('filmy/vabank1.jpg', 'filmy/icon.png', 'Vabank', '"Przepraszam, zastałem pana Murzyna?<br>Kogo?<br> No Murzyna, przecież wczoraj widziałem, jak wychodził z tego mieszkania z psem.<br>Co? Z antychrystem pod jednym dachem, broń Boże... i tu nie ma żadnego psa!"'),
 			Array('filmy/ck1.jpg', 'filmy/icon.png', 'C.K. Dezerterzy', '"Niedługo stwierdzą niezbicie, że napadu na tego pijanego oficera dokonała załoga łodzi podwodnej z atlantyckiej eskadry angielskiej, wykreślą trasę tej łodzi na mapie i udowodnią, że łódź ominęła linie blokady, wpłynęła do Dunaju i jakimś dopływem dostała się do nas, potem rurami kanalizacyjnymi podjechała do sracza i zakotwiczyła w oczekiwaniu na pana oberlejtnanta!"'),
@@ -67,14 +68,15 @@
 		);
 
 		var max_width = 600;
-
+        
 
 		function laduj() {
 			for (var i = 0; i < zdjecia.length; i++)
 				document.getElementById('miniaturki').innerHTML += '<img src="' + zdjecia[i][1] + '" onclick="zmien(' + i + ')" />';
+                
 			zmien(0);
 		}
-
+        
 		function zmien(id) {
 			document.getElementById('zdjecie').innerHTML += '<div id="ladowanie"></div>';
 			var custom = '';
@@ -85,13 +87,18 @@
 
 				document.getElementById('informacje').innerHTML = '<b>' + zdjecia[id][2] + '</b><br /><br /><i>' + zdjecia[id][3] + '</i>';
 				document.getElementById('zdjecie').innerHTML = '<img src="' + zdjecia[id][0] + '"' + custom + ' />';
+                
 			}
 			preload.src = zdjecia[id][0];
+            
 		}
 
 		window.onload = laduj;
 
 	</script>
+    
+    
+    
 	<script>
 		document.body.innerHTML += '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
 
@@ -126,6 +133,14 @@
     ]
   }
 </script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+	<script>
+		window.sr = ScrollReveal();
+		sr.reveal('header, nav, #informacje, #zdjecie, #miniaturki, main h2, p, footer', {
+			reset: true,
+			delay: 300
+		});
+	</script>
 </body>
 
 </html>

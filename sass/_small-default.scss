@@ -6,6 +6,7 @@ body {
 	background-color: $backgroundColor;
 	overflow-x: hidden;
     overflow-y: auto;
+    color: darken($color, 50%);
 	figcaption {
 		text-align: center;
 		margin-top: .3rem;
@@ -230,9 +231,9 @@ main {
 		border-color: #dfdfdf;
 		border-style: solid;
 		border-width: 1px;
-		color: #333333;
+		color: lighten($color, 20%);
 		font-family: 'Roboto Mono', monospace;
-		font-weight: 300;
+		font-weight: $boldWeight;
 		font-size: .9rem;
 		padding: 0.125rem 0.3125rem 0.0625rem;
 	}
@@ -285,12 +286,9 @@ main {
 		transform: scale(1.1);
 		transition: transform .3s ease-in-out;
 	}
-	#miniaturki a img:visited {
-		border: 1px solid red;
-	}
+	
 	#zdjecie img {
-		width: 100%;
-
+		
 	}
 
 
